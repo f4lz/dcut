@@ -1,0 +1,7 @@
+.indicator {
+  background-color: var(--mantine-color-gray-5);
+}
+
+.indicator[data-active] {
+  background-color: var(--mantine-color-blue-6);
+}

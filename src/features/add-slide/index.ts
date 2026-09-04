@@ -1,0 +1,1 @@
+export { AddSlideButton } from "./ui/add-slide-btn"
