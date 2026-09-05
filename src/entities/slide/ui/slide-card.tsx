@@ -1,4 +1,5 @@
 import { Badge, Card, Flex, Text } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { useSlideStore } from "../model/store";
 import type { Slide } from "../model/types";
 
@@ -9,12 +10,13 @@ type Props = {
 
 export const SlideCard = ({ children, slide }: Props) => {
   const toggleSlideChecked = useSlideStore((state) => state.toggleSlideChecked);
+  const isMobile = useMediaQuery("(max-width: 48em)");
 
   return (
     <Card
       h="100%"
       shadow="sm"
-      padding="xl"
+      padding={isMobile ? "md" : "xl"}
       radius="sm"
       withBorder
       display="flex"

@@ -9,8 +9,8 @@ export const Login = () => {
   return isAuth ? (
     <Navigate to="/" replace />
   ) : (
-    <Center h="100vh">
-      <Paper shadow="sm" p="xl" w={400} withBorder>
+    <Center h="100vh" px="md">
+      <Paper shadow="sm" p="xl" w="100%" maw={400} withBorder>
         <AuthForm />
       </Paper>
     </Center>
